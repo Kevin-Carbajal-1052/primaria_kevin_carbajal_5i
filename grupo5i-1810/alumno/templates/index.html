@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{%load static%}
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="static/estilos.css">
+    <title>jaja carbajal</title>
+</head>
+<body>
+    <h1>Desde template</h1>
+    <hr>
+    <ul>
+        {% for i in misalumnos %}
+        <li> {{i.nombre}}</li>
+        {% endfor %}
+    </ul>
+    <script src="{% static 'script.js'%}"></script>
+</body>
+</html>
